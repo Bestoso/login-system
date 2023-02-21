@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font: "Quicksand", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+  font-family: var(--main-font);
+}
+
+.register__section, .login__section {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+}
+.register__section .image__container, .login__section .image__container {
+  width: 50%;
+  height: 100vh;
+  background: #f5f5f5;
+}
+.register__section .image__container img, .login__section .image__container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.register__section #registerForm, .login__section #registerForm, .login__section #loginForm {
+  width: 50%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 100px;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.419);
+}
+.register__section #registerForm .text__container, .login__section #registerForm .text__container, .login__section #loginForm .text__container {
+  margin-bottom: 50px;
+}
+.register__section #registerForm .text__container .title, .login__section #registerForm .text__container .title, .login__section #loginForm .text__container .title {
+  color: #333;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.register__section #registerForm .text__container .subtitle, .login__section #registerForm .text__container .subtitle, .login__section #loginForm .text__container .subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+}
+.register__section #registerForm .text__container .subtitle .link, .login__section #registerForm .text__container .subtitle .link, .login__section #loginForm .text__container .subtitle .link {
+  color: #A2A5DA;
+  text-decoration: none;
+}
+.register__section #registerForm .actions__container, .login__section #registerForm .actions__container, .login__section #loginForm .actions__container {
+  display: flex;
+  flex-direction: column;
+}
+.register__section #registerForm .actions__container input, .login__section #registerForm .actions__container input, .login__section #loginForm .actions__container input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 1rem;
+  font-family: var(--main-font);
+  font-size: 1rem;
+}
+.register__section #registerForm .actions__container input:-webkit-autofill, .login__section #registerForm .actions__container input:-webkit-autofill, .login__section #loginForm .actions__container input:-webkit-autofill, .register__section #registerForm .actions__container input:-webkit-autofill:hover, .register__section #registerForm .actions__container input:-webkit-autofill:focus, .register__section #registerForm .actions__container input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+}
+.register__section #registerForm .actions__container input:placeholder, .login__section #registerForm .actions__container input:placeholder, .login__section #loginForm .actions__container input:placeholder {
+  color: #666;
+}
+.register__section #registerForm .actions__container button, .login__section #registerForm .actions__container button, .login__section #loginForm .actions__container button {
+  margin: 10px 0;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 1rem;
+  background-color: #A2A5DA;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.register__section #registerForm .actions__container button:hover, .login__section #registerForm .actions__container button:hover, .login__section #loginForm .actions__container button:hover {
+  background-color: #a1aedb;
+}
+
+.login__section #loginForm .help__container {
+  margin-top: 10px;
+}
+.login__section #loginForm .help__container a {
+  color: #A2A5DA;
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */

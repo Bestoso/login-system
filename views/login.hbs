@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core" defer ></script>
+    <script src="js/login.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <title>{{title}}</title>
+</head>
+<body>
+
+    <section class="login__section">
+        <div class="image__container">
+            <img src="./images/register.jpg" alt="login image">
+        </div>
+        <form id="loginForm">
+            <div class="text__container">
+                <h1 class="title">Login</h1>
+                <p class="subtitle">Don't have an account? <a href="/register" class="link">Register</a></p>
+            </div>
+            <div class="actions__container">
+                <input type="text" name="email" placeholder="Email" id="email">
+                <input type="password" name="password" placeholder="Password" id="password">
+                <button type="submit">Login</button>
+            </div>
+            <div class="help__container">
+                <a href="/forgot-password" class="link">Forgot password?</a>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
+
